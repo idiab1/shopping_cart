@@ -20,7 +20,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{$lProduct->title}}</h5>
                             <p class="card-text">{{$lProduct->price}}</p>
-                            <a class="btn btn-primary" href="#" role="button">buy</a>
+                            <a class="btn btn-primary" href="{{route('cart.add', $lProduct->id)}}" role="button">buy</a>
                         </div>
                     </div>
                 </div>
