@@ -98,4 +98,15 @@ class ProductController extends Controller
         session()->put('cart', $cart);
         return redirect()->route('products.index')->with('success', 'Product was added');
     }
+
+    // Show shopping cart
+    public function showCart()
+    {
+        if (session()->has('cart')) {
+            $cart = new Cart(session()->get('cart'));
+        } else {
+            $cart = new Cart();
+        }
+        return view('cart.show', compact('cart'));
+    }
 }

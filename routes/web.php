@@ -30,3 +30,6 @@ Route::get('/products', 'ProductController@index')->name('products.index');
 
 // -->>> Add to cart route
 Route::get('/addtocart/{product}', 'ProductController@addToCart')->name('cart.add');
+
+// -->>> route for show cart
+Route::get('/shopping-cart', 'ProductController@showCart')->name('cart.show');

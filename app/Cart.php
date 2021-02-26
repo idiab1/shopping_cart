@@ -26,7 +26,8 @@ class Cart
     public function add($product)
     {
         $item = [
-            'product' => $product->title,
+            'id'      => $product->id,
+            'title'   => $product->title,
             'price'   => $product->price,
             'qty'     => 0,
             'image'   => $product->image
