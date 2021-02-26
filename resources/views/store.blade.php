@@ -19,7 +19,7 @@
                         <img src="{{$lProduct->image}}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{$lProduct->title}}</h5>
-                            <p class="card-text">{{$lProduct->price}}</p>
+                            <p class="card-text">${{$lProduct->price}}</p>
                             <a class="btn btn-primary" href="{{route('cart.add', $lProduct->id)}}" role="button">buy</a>
                         </div>
                     </div>
