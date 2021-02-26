@@ -4,6 +4,9 @@
 <div class="container">
     <!-- Products section-->
     <section>
+        @if (session()->has('success'))
+            
+        @endif
         <div class="row">
             @foreach ($products as $product)
                 <div class="col-md-4 col-sm-6">
