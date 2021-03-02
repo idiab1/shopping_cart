@@ -115,4 +115,10 @@ class ProductController extends Controller
     {
         return view('cart.checkout', compact('amount'));
     }
+
+    // charge function
+    public function charge(Request $request)
+    {
+        dd($request->stripeToken);
+    }
 }
