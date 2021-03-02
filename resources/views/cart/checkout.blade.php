@@ -134,6 +134,7 @@ button:disabled {
             <!-- Display a payment form -->
             <form action="/charge" method="POST" id="payment-form">
                 @csrf
+                <input type="hidden" name="amount" value="{{$amount}}">
                 <div id="card-element">
                     <!--Stripe.js injects the Card Element-->
                     Credit or debit card
