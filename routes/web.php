@@ -33,3 +33,6 @@ Route::get('/addtocart/{product}', 'ProductController@addToCart')->name('cart.ad
 
 // -->>> route for show cart
 Route::get('/shopping-cart', 'ProductController@showCart')->name('cart.show');
+
+// -->>> route for Checkout
+Route::get('/checkout{amount}', 'ProductController@checkout')->name('cart.checkout');

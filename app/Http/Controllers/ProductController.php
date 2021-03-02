@@ -109,4 +109,10 @@ class ProductController extends Controller
         }
         return view('cart.show', compact('cart'));
     }
+
+    // Checkout function
+    public function checkout($amount)
+    {
+        return view('cart.checkout', compact('amount'));
+    }
 }

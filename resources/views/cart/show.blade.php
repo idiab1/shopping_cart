@@ -25,7 +25,7 @@
                         <div class="cart-text">
                             <p>Total Amount is ${{$cart->totalPrice}}</p>
                             <p>Total Quantities is ${{$cart->totalQty}}</p>
-                            <a href="#" class="btn btn-secondary btn-sm"> Change</a>
+                            <a href="{{route('cart.checkout', $cart->totalPrice)}}" class="btn btn-secondary btn-sm">Checkout</a>
 
                         </div>
                     </div>
