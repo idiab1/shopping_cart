@@ -24,7 +24,7 @@
                         <h3 class="cart-title"> Your cart</h3>
                         <div class="cart-text">
                             <p>Total Amount is ${{$cart->totalPrice}}</p>
-                            <p>Total Quantities is ${{$cart->totalQty}}</p>
+                            <p>Total Quantities is {{$cart->totalQty}}</p>
                             <a href="{{route('cart.checkout', $cart->totalPrice)}}" class="btn btn-secondary btn-sm">Checkout</a>
 
                         </div>
