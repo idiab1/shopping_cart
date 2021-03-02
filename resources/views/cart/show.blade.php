@@ -10,7 +10,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $product['title'] }}</h5>
                             <span class="card-text">${{$product['price']}}</span>
-                            <a href="#" class="btn btn-dangar">Remove</a>
+                            <a href="#" class="btn btn-danger btn-sm">Remove</a>
                             <input type="text" name="qty" id="qty" value="{{$product['qty']}}">
                             <a href="#" class="btn btn-secondary btn-sm"> Change</a>
                         </div>
@@ -25,6 +25,8 @@
                         <div class="cart-text">
                             <p>Total Amount is ${{$cart->totalPrice}}</p>
                             <p>Total Quantities is ${{$cart->totalQty}}</p>
+                            <a href="#" class="btn btn-secondary btn-sm"> Change</a>
+
                         </div>
                     </div>
                 </div>
